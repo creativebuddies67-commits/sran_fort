@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js
+.next/
+**/.next/
+
+# Build output
+dist/
+**/dist/
+
+# Environment
+.env
+**/.env

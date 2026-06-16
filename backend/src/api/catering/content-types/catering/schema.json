@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "caterings",
+  "info": {
+    "singularName": "catering",
+    "pluralName": "caterings",
+    "displayName": "Catering",
+    "description": "Catering menus and services"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "menuItems": {
+      "type": "json"
+    },
+    "pricePerPlate": {
+      "type": "decimal"
+    },
+    "cuisineType": {
+      "type": "enumeration",
+      "enum": ["north-indian", "south-indian", "multi-cuisine", "continental", "custom"],
+      "default": "multi-cuisine"
+    },
+    "dietType": {
+      "type": "enumeration",
+      "enum": ["veg", "non-veg", "both"],
+      "default": "both"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"],
+      "description": "Catering photos on Catering page. Save and Publish after uploading."
+    }
+  }
+}

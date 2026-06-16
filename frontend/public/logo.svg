@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="8" fill="#7B1E3A"/>
+  <path d="M60 20 L95 45 L95 95 L25 95 L25 45 Z" fill="#C9A227" opacity="0.9"/>
+  <path d="M60 35 L80 50 L80 85 L40 85 L40 50 Z" fill="#FAF7F2"/>
+  <rect x="52" y="60" width="16" height="25" rx="1" fill="#7B1E3A"/>
+  <circle cx="60" cy="48" r="6" fill="#7B1E3A"/>
+  <text x="60" y="112" text-anchor="middle" fill="#C9A227" font-family="Georgia, serif" font-size="8" font-weight="bold">SRAN FORT</text>
+</svg>

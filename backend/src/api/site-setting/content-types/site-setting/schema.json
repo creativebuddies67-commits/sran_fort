@@ -1,0 +1,110 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Settings & Images",
+    "description": "Homepage photos, logo, contact info, and global site content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "default": "Sran Fort Marriage Palace"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "description": "Site logo shown in header and footer. Square PNG or SVG recommended (min 96×96 px)."
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "description": "Homepage hero background. Use a wide landscape photo (1920×1080 or larger)."
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "text"
+    },
+    "aboutImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"],
+      "description": "About Us image slider on Home and About pages. Upload multiple photos and drag to reorder."
+    },
+    "aboutImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "description": "Fallback single about image when About Images (slider) is empty."
+    },
+    "aboutVideoUrl": {
+      "type": "string",
+      "description": "YouTube video link shown below the about slider (e.g. https://youtu.be/VIDEO_ID)"
+    },
+    "aboutVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["videos"],
+      "description": "Optional uploaded video file (YouTube link above is preferred)."
+    },
+    "ctaImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "description": "Background image for the \"Ready to Plan Your Dream Event?\" section on the homepage."
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutContent": {
+      "type": "richtext"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "phoneSecondary": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "facebookUrl": {
+      "type": "string"
+    },
+    "instagramUrl": {
+      "type": "string"
+    },
+    "youtubeUrl": {
+      "type": "string"
+    },
+    "whatsappNumber": {
+      "type": "string"
+    },
+    "checkInTime": {
+      "type": "string",
+      "default": "02:00 PM"
+    },
+    "checkOutTime": {
+      "type": "string",
+      "default": "10:00 AM"
+    },
+    "stats": {
+      "type": "json"
+    }
+  }
+}

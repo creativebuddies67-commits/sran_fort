@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "booking_inquiries",
+  "info": {
+    "singularName": "booking-inquiry",
+    "pluralName": "booking-inquiries",
+    "displayName": "Booking Inquiry",
+    "description": "Customer booking and event inquiries"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "eventType": {
+      "type": "enumeration",
+      "enum": ["wedding", "reception", "engagement", "birthday", "corporate", "other"],
+      "required": true
+    },
+    "eventDate": {
+      "type": "date"
+    },
+    "guestCount": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["new", "contacted", "confirmed", "cancelled"],
+      "default": "new"
+    }
+  }
+}
